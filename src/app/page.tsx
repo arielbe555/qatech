@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
@@ -70,7 +70,7 @@ export default function QASoftHomePage() {
                 <div className="text-xs text-gray-400 font-medium">Plataforma QASOFT</div>
               </div>
             </div>
-            
+
             {/* Desktop Navigation */}
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
@@ -78,25 +78,24 @@ export default function QASoftHomePage() {
                   <button
                     key={section}
                     onClick={() => scrollToSection(section)}
-                    className={`px-4 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide ${
-                      activeSection === section
+                    className={`px-4 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide ${activeSection === section
                         ? 'text-cyan-400 border-b-2 border-cyan-400'
                         : 'text-gray-300 hover:text-cyan-400'
-                    }`}
+                      }`}
                   >
                     {section === 'inicio' ? 'Inicio' :
-                     section === 'servicios' ? 'Servicios' :
-                     section === 'certificaciones' ? 'Certificaciones' :
-                     section === 'monitoreo' ? 'Monitoreo' :
-                     section === 'consultoria' ? 'Consultoría' :
-                     section === 'casos-exito' ? 'Casos de Éxito' : 'Contacto'}
+                      section === 'servicios' ? 'Servicios' :
+                        section === 'certificaciones' ? 'Certificaciones' :
+                          section === 'monitoreo' ? 'Monitoreo' :
+                            section === 'consultoria' ? 'Consultoría' :
+                              section === 'casos-exito' ? 'Casos de Éxito' : 'Contacto'}
                   </button>
                 ))}
               </div>
             </div>
 
             <div className="hidden md:block">
-              <Button 
+              <Button
                 onClick={() => scrollToSection('contacto')}
                 className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-medium px-6 py-2 rounded-lg uppercase tracking-wide text-sm"
               >
@@ -130,11 +129,11 @@ export default function QASoftHomePage() {
                     className="text-left px-3 py-2 text-sm font-medium text-gray-300 hover:text-cyan-400 uppercase tracking-wide"
                   >
                     {section === 'inicio' ? 'Inicio' :
-                     section === 'servicios' ? 'Servicios' :
-                     section === 'certificaciones' ? 'Certificaciones' :
-                     section === 'monitoreo' ? 'Monitoreo' :
-                     section === 'consultoria' ? 'Consultoría' :
-                     section === 'casos-exito' ? 'Casos de Éxito' : 'Contacto'}
+                      section === 'servicios' ? 'Servicios' :
+                        section === 'certificaciones' ? 'Certificaciones' :
+                          section === 'monitoreo' ? 'Monitoreo' :
+                            section === 'consultoria' ? 'Consultoría' :
+                              section === 'casos-exito' ? 'Casos de Éxito' : 'Contacto'}
                   </button>
                 ))}
               </div>
@@ -149,28 +148,28 @@ export default function QASoftHomePage() {
         <section id="inicio" className="pt-20 min-h-screen flex items-center bg-gradient-to-br from-slate-900 via-slate-800 to-gray-900 relative overflow-hidden">
           {/* Background Pattern */}
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMxZTQwYWYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMSIvPjwvZz48L2c+PC9zdmc+')] opacity-30"></div>
-          
+
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="text-left">
                 <div className="mb-6">
-                   <Badge className="bg-cyan-500/10 text-cyan-400 border-cyan-500/20 mb-4 px-4 py-2 text-sm font-medium uppercase tracking-wider">
+                  <Badge className="bg-cyan-500/10 text-cyan-400 border-cyan-500/20 mb-4 px-4 py-2 text-sm font-medium uppercase tracking-wider">
                     QATECH — Plataforma QASOFT
                   </Badge>
                 </div>
-                
+
                 <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
                   Tecnología{' '}
                   <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
                     bajo control
                   </span>
                 </h1>
-                
+
                 <div className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed font-medium">
                   <div className="mb-2">Ciberseguridad, certificación y</div>
                   <div>monitoreo continuo para plataformas críticas.</div>
                 </div>
-                
+
                 <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl p-6 mb-8">
                   <p className="text-gray-300 mb-4 font-medium">
                     Auditamos, certificamos y protegemos su infraestructura digital bajo los más altos estándares internacionales:
@@ -180,18 +179,18 @@ export default function QASoftHomePage() {
                     <Badge variant="outline" className="border-blue-500/30 text-blue-400 bg-blue-500/10">NIST</Badge>
                     <Badge variant="outline" className="border-green-500/30 text-green-400 bg-green-500/10">Ley 25.326</Badge>
                     <Badge variant="outline" className="border-purple-500/30 text-purple-400 bg-purple-500/10">ENS</Badge>
-                     <Badge variant="outline" className="border-orange-500/30 text-orange-400 bg-orange-500/10">IRAM</Badge>
+                    <Badge variant="outline" className="border-orange-500/30 text-orange-400 bg-orange-500/10">IRAM</Badge>
                   </div>
                 </div>
-                
+
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button 
+                  <Button
                     onClick={() => scrollToSection('servicios')}
                     className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-4 rounded-lg text-lg font-medium transition-all duration-300 transform hover:scale-105 shadow-xl"
                   >
                     Nuestros Servicios
                   </Button>
-                  <Button 
+                  <Button
                     onClick={() => scrollToSection('contacto')}
                     variant="outline"
                     className="border-2 border-slate-600 text-gray-300 hover:bg-slate-800 hover:text-white px-8 py-4 rounded-lg text-lg font-medium transition-all duration-300"
@@ -200,17 +199,17 @@ export default function QASoftHomePage() {
                   </Button>
                 </div>
               </div>
-              
+
               <div className="lg:text-center">
                 <div className="relative">
                   <div className="bg-gradient-to-r from-cyan-500/10 to-blue-600/10 rounded-2xl p-8 backdrop-blur-sm border border-slate-700/50">
-                    <img 
-                      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/99f1d4fa-5ca8-4fac-a4fd-a7299313356b.png" 
+                    <img
+                      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/99f1d4fa-5ca8-4fac-a4fd-a7299313356b.png"
                       alt="Centro de Operaciones de Ciberseguridad QATECH con dashboard de monitoreo SOC en tiempo real"
                       className="w-full h-auto rounded-xl shadow-2xl border border-slate-600/50"
                     />
                   </div>
-                  
+
                   {/* Status Indicators */}
                   <div className="absolute -bottom-4 -right-4 bg-slate-800 border border-slate-600 p-4 rounded-xl shadow-xl">
                     <div className="flex items-center space-x-3">
@@ -218,7 +217,7 @@ export default function QASoftHomePage() {
                       <span className="text-sm font-medium text-gray-300">SOC Activo 24/7</span>
                     </div>
                   </div>
-                  
+
                   <div className="absolute -top-4 -left-4 bg-slate-800 border border-slate-600 p-3 rounded-xl shadow-xl">
                     <div className="text-center">
                       <div className="text-lg font-bold text-cyan-400">ISO 27001</div>
@@ -228,7 +227,7 @@ export default function QASoftHomePage() {
                 </div>
               </div>
             </div>
-            
+
             {/* Stats Bar */}
             <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div className="bg-slate-800/30 backdrop-blur-sm border border-slate-700/50 rounded-lg p-6">
@@ -260,7 +259,7 @@ export default function QASoftHomePage() {
                 Integral
               </h2>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                Protección avanzada de infraestructuras críticas con auditorías técnicas especializadas 
+                Protección avanzada de infraestructuras críticas con auditorías técnicas especializadas
                 y monitoreo de amenazas en tiempo real
               </p>
             </div>
@@ -374,15 +373,15 @@ export default function QASoftHomePage() {
                 de Plataformas
               </h2>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                Modelos de certificación privada profesional avalados por consultores expertos 
+                Modelos de certificación privada profesional avalados por consultores expertos
                 en estándares internacionales ISO, NIST y ENS
               </p>
             </div>
 
             <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
               <div>
-                <img 
-                  src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/718d9537-7f2d-45e9-89d0-00c4fa15a732.png" 
+                <img
+                  src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/718d9537-7f2d-45e9-89d0-00c4fa15a732.png"
                   alt="Dashboard de proceso de certificación QATECH mostrando estándares ISO 27001, NIST y ENS"
                   className="w-full h-auto rounded-xl shadow-2xl border border-slate-600"
                 />
@@ -415,12 +414,12 @@ export default function QASoftHomePage() {
                     <h4 className="font-semibold text-white mb-2">Auditorías de Conformidad</h4>
                     <p className="text-sm text-gray-400">Evaluación previa a certificación oficial con informes DPIA/EIA</p>
                   </div>
-                  
+
                   <div className="bg-slate-800/50 p-4 rounded-lg border border-slate-700">
                     <h4 className="font-semibold text-white mb-2">Certificados QATECH</h4>
                     <p className="text-sm text-gray-400">Emisión de certificados técnicos de conformidad institucional</p>
                   </div>
-                  
+
                   <div className="bg-slate-800/50 p-4 rounded-lg border border-slate-700">
                     <h4 className="font-semibold text-white mb-2">Cumplimiento IRAM</h4>
                     <p className="text-sm text-gray-400">Estándares IRAM Argentina e ISO para entidades empresariales</p>
@@ -440,7 +439,7 @@ export default function QASoftHomePage() {
                 Continuo 24/7
               </h2>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                Supervisión constante de procesos críticos, infraestructuras y datos con 
+                Supervisión constante de procesos críticos, infraestructuras y datos con
                 dashboards en tiempo real y alertas automáticas
               </p>
             </div>
@@ -501,8 +500,8 @@ export default function QASoftHomePage() {
                   </div>
                 </div>
                 <div>
-                  <img 
-                    src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1a7014cc-74cf-4dd7-a71d-da8229df86d3.png" 
+                  <img
+                    src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1a7014cc-74cf-4dd7-a71d-da8229df86d3.png"
                     alt="Dashboard de monitoreo en tiempo real con métricas de Grafana y Kibana de QASOFT"
                     className="w-full h-auto rounded-xl shadow-xl border border-slate-600"
                   />
@@ -521,7 +520,7 @@ export default function QASoftHomePage() {
                 Estratégica
               </h2>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                Diagnóstico integral y asesoramiento especializado para entidades privadas y 
+                Diagnóstico integral y asesoramiento especializado para entidades privadas y
                 gubernamentales en seguridad, cumplimiento y resiliencia digital
               </p>
             </div>
@@ -530,7 +529,7 @@ export default function QASoftHomePage() {
               <div className="space-y-8">
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-6">Servicios de Consultoría</h3>
-                  
+
                   <div className="space-y-6">
                     <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 p-6 rounded-xl border border-purple-500/20">
                       <div className="flex items-start space-x-4">
@@ -540,13 +539,13 @@ export default function QASoftHomePage() {
                         <div>
                           <h4 className="font-semibold text-white mb-2">Diagnóstico Integral</h4>
                           <p className="text-gray-400 text-sm">
-                            Evaluación completa de seguridad, cumplimiento normativo y análisis de brechas 
+                            Evaluación completa de seguridad, cumplimiento normativo y análisis de brechas
                             según estándares IRAM, ISO e internacionales
                           </p>
                         </div>
                       </div>
                     </div>
-                    
+
                     <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 p-6 rounded-xl border border-blue-500/20">
                       <div className="flex items-start space-x-4">
                         <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
@@ -555,13 +554,13 @@ export default function QASoftHomePage() {
                         <div>
                           <h4 className="font-semibold text-white mb-2">Sector Gubernamental</h4>
                           <p className="text-gray-400 text-sm">
-                            Asesoramiento especializado para entidades públicas en implementación 
+                            Asesoramiento especializado para entidades públicas en implementación
                             de estándares IRAM y cumplimiento normativo internacional
                           </p>
                         </div>
                       </div>
                     </div>
-                    
+
                     <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 p-6 rounded-xl border border-green-500/20">
                       <div className="flex items-start space-x-4">
                         <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center">
@@ -570,7 +569,7 @@ export default function QASoftHomePage() {
                         <div>
                           <h4 className="font-semibold text-white mb-2">BCP / DRP</h4>
                           <p className="text-gray-400 text-sm">
-                            Planes de Continuidad Operativa y Recuperación ante Desastres 
+                            Planes de Continuidad Operativa y Recuperación ante Desastres
                             con metodologías probadas en entornos críticos
                           </p>
                         </div>
@@ -579,32 +578,28 @@ export default function QASoftHomePage() {
                   </div>
                 </div>
               </div>
-              
+
               <div>
                 <div className="bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-2xl border border-slate-700">
-                  <img 
-                    src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f2a83685-0daf-4861-a31c-8776757f4a6a.png" 
-                    alt="Consultoría estratégica QATECH para empresas multinacionales con estándares ISO e IRAM"
-                    className="w-full h-auto rounded-xl shadow-xl border border-slate-600 mb-6"
-                  />
-                  
-                  <div className="text-center">
-                    <h4 className="text-xl font-bold text-white mb-4">Clientes Atendidos</h4>
-                    <div className="grid grid-cols-3 gap-4">
-                      <div className="text-center">
-                        <div className="text-2xl font-bold text-purple-400 mb-1">80+</div>
-                        <div className="text-xs text-gray-400">Corporaciones</div>
-                      </div>
-                      <div className="text-center">
-                        <div className="text-2xl font-bold text-blue-400 mb-1">200+</div>
-                        <div className="text-xs text-gray-400">Empresas Privadas</div>
-                      </div>
-                      <div className="text-center">
-                        <div className="text-2xl font-bold text-green-400 mb-1">100%</div>
-                        <div className="text-xs text-gray-400">Cumplimiento</div>
-                      </div>
-                    </div>
-                  </div>
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full rounded-xl"
+                  >
+                    <source src="/videos/Video_de_Panel_de_Ciberseguridad.mp4" type="video/mp4" />
+                    Tu navegador no soporta videos HTML5.
+                  </video>
+                  <div className="text-xs text-gray-400 mt-4">Corporaciones</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-blue-400 mb-1">200+</div>
+                  <div className="text-xs text-gray-400">Empresas Privadas</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-green-400 mb-1">100%</div>
+                  <div className="text-xs text-gray-400">Cumplimiento</div>
                 </div>
               </div>
             </div>
@@ -619,7 +614,7 @@ export default function QASoftHomePage() {
                 Casos de <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Éxito</span>
               </h2>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                Proyectos exitosos implementados en gobiernos, instituciones financieras 
+                Proyectos exitosos implementados en gobiernos, instituciones financieras
                 y empresas tecnológicas de Argentina y Latinoamérica
               </p>
             </div>
@@ -651,7 +646,7 @@ export default function QASoftHomePage() {
                     </div>
                     <div className="pt-3 border-t border-slate-700">
                       <p className="text-gray-400 text-xs">
-                        Implementación completa de controles ISO/NIST para corporación 
+                        Implementación completa de controles ISO/NIST para corporación
                         multinacional con más de 15,000 usuarios.
                       </p>
                     </div>
@@ -685,7 +680,7 @@ export default function QASoftHomePage() {
                     </div>
                     <div className="pt-3 border-t border-slate-700">
                       <p className="text-gray-400 text-xs">
-                        Centro SOC dedicado para fintech con 500M+ transacciones mensuales 
+                        Centro SOC dedicado para fintech con 500M+ transacciones mensuales
                         y cumplimiento PCI-DSS.
                       </p>
                     </div>
@@ -719,7 +714,7 @@ export default function QASoftHomePage() {
                     </div>
                     <div className="pt-3 border-t border-slate-700">
                       <p className="text-gray-400 text-xs">
-                        Pentesting completo de plataforma SaaS con más de 100K usuarios 
+                        Pentesting completo de plataforma SaaS con más de 100K usuarios
                         activos y certificación NIST.
                       </p>
                     </div>
@@ -777,7 +772,7 @@ export default function QASoftHomePage() {
                 Técnico
               </h2>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                Conéctese con nuestros especialistas para una consulta técnica personalizada. 
+                Conéctese con nuestros especialistas para una consulta técnica personalizada.
                 Soporte profesional 24/7 para infraestructuras críticas.
               </p>
             </div>
@@ -785,7 +780,7 @@ export default function QASoftHomePage() {
             <div className="grid lg:grid-cols-2 gap-12">
               <div>
                 <h3 className="text-2xl font-bold text-white mb-8">Información Corporativa</h3>
-                
+
                 <div className="space-y-6 mb-8">
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center">
@@ -794,13 +789,13 @@ export default function QASoftHomePage() {
                     <div>
                       <h4 className="font-semibold text-white mb-1">Sede Corporativa</h4>
                       <p className="text-gray-400">
-                        Av. Corrientes 1234, Piso 15<br />
+                        Gral. Lemos 260 , Piso 9 <br />
                         CABA, Buenos Aires - Argentina<br />
-                        CP: C1043AAZ
+                        CP: C1427
                       </p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center">
                       <span className="text-xl text-blue-400">📞</span>
@@ -808,13 +803,13 @@ export default function QASoftHomePage() {
                     <div>
                       <h4 className="font-semibold text-white mb-1">Soporte Técnico</h4>
                       <p className="text-gray-400">
-                        +54 11 4000-5000 (Arg)<br />
-                        +1 555-QASOFT (Int)<br />
+                        +54 11 5143-7396 (Arg)<br />
+                        +1 689-288-6387(Int)<br />
                         Emergencias SOC: 24/7
                       </p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center">
                       <span className="text-xl text-green-400">✉️</span>
@@ -822,9 +817,9 @@ export default function QASoftHomePage() {
                     <div>
                       <h4 className="font-semibold text-white mb-1">Contacto Ejecutivo</h4>
                       <p className="text-gray-400">
-                        contacto@qatech.com.ar<br />
-                        soc@qatech.com.ar<br />
-                        certificaciones@qatech.com.ar
+                        contacto@qatech.ar<br />
+                        soc@qatech.ar<br />
+                        certificaciones@qatech.ar
                       </p>
                     </div>
                   </div>
@@ -847,7 +842,7 @@ export default function QASoftHomePage() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-400">WhatsApp Corporativo:</span>
-                      <span className="text-cyan-400 font-medium">+54 9 11 XXXX-XXXX</span>
+                      <span className="text-cyan-400 font-medium">+54 9 11 5052-1915 </span>
                     </div>
                   </div>
                 </div>
@@ -855,7 +850,7 @@ export default function QASoftHomePage() {
 
               <div className="bg-slate-800/30 border border-slate-700 rounded-2xl shadow-2xl p-8">
                 <h3 className="text-2xl font-bold text-white mb-6">Solicitud de Consulta</h3>
-                
+
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
@@ -873,7 +868,7 @@ export default function QASoftHomePage() {
                         placeholder="Ej: Juan Pérez"
                       />
                     </div>
-                    
+
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
                         Email Corporativo *
@@ -890,7 +885,7 @@ export default function QASoftHomePage() {
                       />
                     </div>
                   </div>
-                  
+
                   <div>
                     <label htmlFor="company" className="block text-sm font-medium text-gray-300 mb-2">
                       Empresa / Institución *
@@ -925,7 +920,7 @@ export default function QASoftHomePage() {
                       </SelectContent>
                     </Select>
                   </div>
-                  
+
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
                       Descripción del Requerimiento *
@@ -941,15 +936,15 @@ export default function QASoftHomePage() {
                       placeholder="Detalle su requerimiento técnico, infraestructura actual, cantidad de usuarios, normativas aplicables, etc."
                     />
                   </div>
-                  
-                  <Button 
+
+                  <Button
                     type="submit"
                     className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white py-4 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 shadow-xl"
                   >
                     Enviar Solicitud de Consulta
                   </Button>
                 </form>
-                
+
                 <div className="mt-6 text-center">
                   <p className="text-sm text-gray-500">
                     * Campos obligatorios. Respuesta técnica garantizada en menos de 4 horas hábiles.
@@ -981,7 +976,7 @@ export default function QASoftHomePage() {
                 </div>
               </div>
               <p className="text-gray-500 mb-4 text-sm">
-                Líderes en ciberseguridad integral, certificación de plataformas digitales 
+                Líderes en ciberseguridad integral, certificación de plataformas digitales
                 y monitoreo continuo de infraestructuras críticas.
               </p>
               <div className="text-xs text-gray-600">
@@ -989,7 +984,7 @@ export default function QASoftHomePage() {
                 <div>Soporte técnico 24/7</div>
               </div>
             </div>
-            
+
             <div>
               <h4 className="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Ciberseguridad</h4>
               <ul className="space-y-2 text-sm">
@@ -999,7 +994,7 @@ export default function QASoftHomePage() {
                 <li><a href="#servicios" className="hover:text-cyan-400 transition-colors">Auditorías Éticas</a></li>
               </ul>
             </div>
-            
+
             <div>
               <h4 className="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Certificaciones</h4>
               <ul className="space-y-2 text-sm">
@@ -1009,22 +1004,22 @@ export default function QASoftHomePage() {
                 <li><a href="#certificaciones" className="hover:text-cyan-400 transition-colors">IRAM Argentina</a></li>
               </ul>
             </div>
-            
+
             <div>
               <h4 className="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Empresa</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#casos-exito" className="hover:text-cyan-400 transition-colors">Casos de Éxito</a></li>
+                <li><a href="#casos_exito" className="hover:text-cyan-400 transition-colors">Casos de Éxito</a></li>
                 <li><a href="#consultoria" className="hover:text-cyan-400 transition-colors">Consultoría</a></li>
                 <li><a href="#contacto" className="hover:text-cyan-400 transition-colors">Contacto</a></li>
                 <li><a href="#" className="hover:text-cyan-400 transition-colors">Términos de Servicio</a></li>
               </ul>
             </div>
           </div>
-          
+
           <div className="border-t border-gray-800 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-sm text-gray-500">
-                © 2024 QASOFT - QATECH. Tecnología bajo control. Todos los derechos reservados.
+                © 2025 QASOFT - QATECH. Tecnología bajo control. Todos los derechos reservados.
               </p>
               <div className="flex items-center space-x-4 mt-4 md:mt-0">
                 <Badge variant="outline" className="border-gray-700 text-gray-500 text-xs">

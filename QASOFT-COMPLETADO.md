@@ -162,5 +162,3 @@ El sitio web institucional de QASOFT está **completamente funcional** y listo p
 
 **QASOFT - QATECH | Tecnología bajo control**  
 *Ciberseguridad, certificación y monitoreo continuo para plataformas críticas*
-
-**Preview URL**: https://sb-5hoi7fuq8yy2.vercel.run
